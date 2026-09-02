@@ -32,4 +32,5 @@ def find_errors(log_file):
 # log_file = input("Podaj plik loga: ")
 # number = find_errors(log_file)
 # print("First ERROR is on line " + str(number))
+#
 
