@@ -29,6 +29,14 @@ def find_errors(log_file):
                 print(number)
                 return number
 
+def has_warning(log_file):
+    """Checks if the loge contains a WARNING"""
+    warning = False
+    with open(log_file, "r") as file:
+        for line in file:
+            if "WARNING" in file:
+                warning = True
+
 # log_file = input("Podaj plik loga: ")
 # number = find_errors(log_file)
 # print("First ERROR is on line " + str(number))
