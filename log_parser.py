@@ -11,11 +11,11 @@ def count_errors(log_file):
 
 def has_fatal(log_file):
     """Checks if the log contain a FATAL error"""
-    fatal = True
+    fatal = False
     with open(log_file, "r") as file:
         for line in file:
             if "FATAL" in line:
-                fatal = False
+                fatal = True
         return fatal
 
 
