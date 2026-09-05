@@ -19,7 +19,6 @@ def has_fatal(log_file):
         return fatal
 
 
-
 def find_errors(log_file):
     """Check line number of first FATAL error"""
     with open(log_file, "r") as file:
@@ -29,6 +28,7 @@ def find_errors(log_file):
                 print(number)
                 return number
 
+
 def has_warning(log_file):
     """Checks if the loge contains a WARNING"""
     warning = False
@@ -36,6 +36,7 @@ def has_warning(log_file):
         for line in file:
             if "WARNING" in file:
                 warning = True
+        return warning
 
 # log_file = input("Podaj plik loga: ")
 # number = find_errors(log_file)
