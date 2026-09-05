@@ -32,4 +32,5 @@ from log_parser import has_warning
     ("clean.log", False)
 ])
                         
-
+def test_has_warning(log_file, expected):
+    assert has_warning(log_file) == expected
