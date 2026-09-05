@@ -29,7 +29,7 @@ def test_find_errors(log_file, expected):
 from log_parser import has_warning
 @pytest.mark.parametrize("log_file", "expected", [
     ("log.log", True)
-    ("clean.log", False)
+    ("clean.log", False),
 ])
                         
 def test_has_warning(log_file, expected):
