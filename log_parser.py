@@ -34,7 +34,7 @@ def has_warning(log_file):
     warning = False
     with open(log_file, "r") as file:
         for line in file:
-            if "WARNING" in file:
+            if "WARNING" in line:
                 warning = True
         return warning
 
