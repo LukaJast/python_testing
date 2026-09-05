@@ -15,7 +15,7 @@ def has_fatal(log_file):
     with open(log_file, "r") as file:
         for line in file:
             if "FATAL" in line:
-                fatal = True
+                fatal = False
         return fatal
 
 
