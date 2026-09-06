@@ -2,7 +2,7 @@ def log_creation(file_name):
         """Helper for creating log file"""
         with open(file_name, 'w') as file:
             file.write("WARNING\nWARNING\nWARNING\n")
-            print(repr(file_name))
+            # print(repr(file_name))
         return file_name
 
 
